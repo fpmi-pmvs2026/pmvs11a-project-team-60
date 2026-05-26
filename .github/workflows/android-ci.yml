@@ -1,0 +1,27 @@
+name: Android CI
+
+on:
+  push:
+    paths:
+      - 'code/**'
+      - '.github/workflows/android-ci.yml'
+  pull_request:
+    paths:
+      - 'code/**'
+
+jobs:
+  build:
+    if: hashFiles('code/gradlew') != ''
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: code
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: chmod +x gradlew && ./gradlew test assembleDebug

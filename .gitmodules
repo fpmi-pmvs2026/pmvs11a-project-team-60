@@ -1,0 +1,5 @@
+# Код приложения в каталоге code/ (в монорепозитории labs/mobile).
+# При публикации на GitHub можно вынести code/ в отдельный репозиторий и раскомментировать:
+# [submodule "code"]
+#   path = code
+#   url = https://github.com/stanulpych/pmvs-labtracker-android.git

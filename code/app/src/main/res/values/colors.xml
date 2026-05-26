@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="guess_kt_background">#E3F2FD</color>
+    <color name="guess_kt_text_primary">#0D47A1</color>
+    <color name="guess_kt_text_secondary">#1565C0</color>
+    <color name="guess_kt_text_hint">#42A5F5</color>
+    <color name="guess_kt_button">#1565C0</color>
+    <color name="guess_kt_button_text">#FFFFFF</color>
+    <color name="ic_launcher_bg">#0D47A1</color>
+</resources>
